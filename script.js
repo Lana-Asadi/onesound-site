@@ -1,7 +1,7 @@
 /* Cart */
 let cartCount=0;
 function addToCart(){ cartCount++; document.getElementById("cart-count").innerText=cartCount; alert("Added to cart!");}
-function checkout(){ window.location.href="https://buy.stripe.com/test_123456789"; }
+function checkout(){ window.location.href="https://buy.stripe.com/test_28E6oH2YIeNN3Sa3mO8g000"; }
 
 /* Lightbox */
 function changeImage(src){ document.getElementById("main-image").src=src;}
