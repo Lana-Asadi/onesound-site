@@ -1,122 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OneSound – Hear Everything</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-  background: #0f0f0f;
-  color: white;
-}
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="OneSound Logo" class="logo-img"> OneSound
+  </div>
+  <div class="cart">
+    <img src="cart-icon.png" alt="Cart" class="cart-img"> Cart: <span id="cart-count">0</span>
+  </div>
+</header>
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background: #000;
-  font-size: 18px;
-}
+<section class="hero-home">
+  <img src="product1.png" alt="OneSound Hero" class="hero-img">
+  <h1>Hear Everything. Experience True Sound.</h1>
+  <a href="product.html" class="shop-now-btn">Shop Now</a>
+</section>
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+<section class="featured-product">
+  <h2>Featured Product</h2>
+  <div class="product-card" onclick="window.location.href='product.html'">
+    <img src="product1.png" alt="OneSound IEM">
+    <h3>OneSound IEM</h3>
+    <p class="price">$19.99</p>
+    <button>Buy Now</button>
+  </div>
+</section>
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 10%;
-  gap: 60px;
-  flex-wrap: wrap;
-}
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review">
+    <p>"Best IEM I've ever used! Amazing clarity."</p>
+    <span>- Alex</span>
+  </div>
+  <div class="review">
+    <p>"Excellent build quality and sound."</p>
+    <span>- Sam</span>
+  </div>
+  <div class="review">
+    <p>"Highly recommend for audiophiles."</p>
+    <span>- Taylor</span>
+  </div>
+</section>
 
-.product-images {
-  max-width: 450px;
-}
+<section class="countdown">
+  <h2>Limited Time Offer!</h2>
+  <div id="timer"></div>
+</section>
 
-.main-image {
-  width: 100%;
-  border-radius: 15px;
-  cursor: pointer;
-}
+<section class="related-products">
+  <h2>You Might Also Like</h2>
+  <div class="product-card">
+    <a href="https://www.aliexpress.com/item/1005005397922347.html" target="_blank">
+      <img src="https://ae01.alicdn.com/kf/H3f3c3c3a0e6147f8b9a1b4bce7e79c3aB.jpg_350x350.jpg" alt="Bluetooth Earbuds">
+      <h3>Wireless Bluetooth Earbuds</h3>
+      <p class="price">$24.99</p>
+    </a>
+  </div>
+  <div class="product-card">
+    <a href="https://www.aliexpress.com/item/1005005427323487.html" target="_blank">
+      <img src="https://ae01.alicdn.com/kf/Habc7b7e0b2344f0b833a45c5e4e1b0c5n.jpg_350x350.jpg" alt="Noise Cancelling Earphones">
+      <h3>Noise Cancelling Earphones</h3>
+      <p class="price">$29.99</p>
+    </a>
+  </div>
+</section>
 
-.thumbnail-row {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
+<footer>
+  © 2026 OneSound. All rights reserved.
+</footer>
 
-.thumbnail-row img {
-  width: 60px;
-  border-radius: 8px;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.thumbnail-row img:hover {
-  opacity: 1;
-}
-
-.product-info {
-  max-width: 400px;
-}
-
-.tagline {
-  margin: 10px 0;
-  color: #aaa;
-}
-
-.price {
-  font-size: 28px;
-  margin: 15px 0;
-}
-
-select {
-  padding: 8px;
-  margin: 10px 0 20px 0;
-  width: 100%;
-}
-
-button {
-  padding: 12px;
-  width: 100%;
-  margin-bottom: 10px;
-  border: none;
-  background: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.buy {
-  background: #00ffae;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  margin-top: 60px;
-}
-
-/* Lightbox */
-#lightbox {
-  display: none;
-  position: fixed;
-  background: rgba(0,0,0,0.9);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#lightbox img {
-  max-width: 80%;
-  border-radius: 15px;
-}
+<script src="script.js"></script>
+</body>
+</html>
