@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>OneSound – Hear Everything</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OneSound – Hear Everything</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">OneSound</div>
-    <a href="#buy" class="buy-btn">Buy Now</a>
+  <div class="logo">OneSound</div>
+  <div class="cart">Cart: <span id="cart-count">0</span></div>
 </header>
 
 <section class="hero">
-    <div class="hero-text">
-        <h1>Hear Everything.</h1>
-        <p>Premium in-ear monitors designed for clarity, depth, and power.</p>
-        <a href="#buy" class="primary-btn">Shop Now</a>
+
+  <div class="product-images">
+    <img id="main-image" src="product1.png" class="main-image">
+
+    <div class="thumbnail-row">
+      <img src="product1.png" onclick="changeImage(this.src)">
+      <img src="product2.png" onclick="changeImage(this.src)">
+      <img src="product3.png" onclick="changeImage(this.src)">
+      <img src="product4.png" onclick="changeImage(this.src)">
+      <img src="product5.png" onclick="changeImage(this.src)">
+      <img src="product6.png" onclick="changeImage(this.src)">
+      <img src="product7.png" onclick="changeImage(this.src)">
     </div>
-    <div class="hero-image">
-        <img src="product1.png" alt="OneSound IEM">
-    </div>
+  </div>
+
+  <div class="product-info">
+    <h1>OneSound IEM</h1>
+    <p class="tagline">Hear Everything.</p>
+    <p class="price">$19.99</p>
+
+    <label>Select Color:</label>
+    <select id="color">
+      <option>Black</option>
+      <option>Blue</option>
+      <option>Red</option>
+      <option>Purple</option>
+    </select>
+
+    <button onclick="addToCart()">Add to Cart</button>
+    <button class="buy" onclick="checkout()">Buy Now</button>
+
+  </div>
+
 </section>
 
-<section class="gallery">
-    <h2>Product Gallery</h2>
-    <div class="gallery-grid">
-        <img src="product1.png">
-        <img src="product2.png">
-        <img src="product3.png">
-        <img src="product4.png">
-        <img src="product5.png">
-        <img src="product6.png">
-        <img src="product7.png">
-    </div>
-</section>
-
-<section class="pricing" id="buy">
-    <h2>Only $39.99</h2>
-    <p>Free worldwide shipping. 30-day guarantee.</p>
-    <button onclick="buyNow()">Buy Now</button>
-</section>
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
 
 <footer>
-    <p>© 2026 OneSound. All rights reserved.</p>
+  © 2026 OneSound. All rights reserved.
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
