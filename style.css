@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buy-btn {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.primary-btn {
+    background: white;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 400px;
+}
+
+.features {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-box {
+    flex: 1;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.product-showcase {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.product-showcase img {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.pricing {
+    text-align: center;
+    padding: 60px 10%;
+    background: #111;
+}
+
+.pricing button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
