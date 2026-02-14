@@ -1,44 +1,28 @@
-/* Universal */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial,sans-serif;}
-body { background:#0f0f0f; color:white; transition: background 0.5s;}
-a { text-decoration:none; color: inherit; }
-button { cursor:pointer; border:none; border-radius:5px; transition: transform 0.2s; }
-button:hover { transform: scale(1.05); }
-
-/* Header */
-header { display:flex; justify-content:space-between; padding:20px 10%; background:#000; align-items:center; }
-.logo-img { width:40px; vertical-align:middle; margin-right:10px;}
-.cart-img { width:30px; vertical-align:middle; margin-right:5px;}
-
-/* Hero */
-.hero-home { text-align:center; padding:80px 10px; }
-.hero-img { width:60%; border-radius:15px; transition: transform 0.5s; }
-.hero-img:hover { transform: scale(1.05); }
-.shop-now-btn { display:inline-block; padding:15px 30px; margin-top:20px; background:#FFD700; color:black; font-weight:bold; border-radius:10px; transition: background 0.3s; }
-.shop-now-btn:hover { background:#FFC107; }
-
-/* Featured Product */
-.featured-product { text-align:center; padding:50px 10%; }
-.product-card { display:inline-block; margin:20px; background:#1a1a1a; padding:20px; border-radius:15px; transition: transform 0.3s; }
-.product-card:hover { transform: scale(1.05); }
-.product-card img { width:200px; border-radius:15px; }
-.price { font-size:20px; color:#FFD700; margin-top:10px; }
-
-/* Reviews */
-.reviews { background:#111; padding:50px 10%; }
-.reviews h2 { color:#FFD700; margin-bottom:20px;}
-.review { margin-bottom:20px; font-style:italic; }
-.review span { display:block; margin-top:5px; font-weight:bold; }
-
-/* Countdown */
-.countdown { text-align:center; padding:50px 10%; background:#1a1a1a; border-radius:15px; margin:50px 10%; }
-#timer { font-size:28px; color:#FFD700; }
-
-/* Related Products */
-.related-products { padding:50px 10%; text-align:center; }
-.related-products h2 { color:#FFD700; margin-bottom:30px; }
-.related-products .product-card { display:inline-block; margin:20px; background:#1a1a1a; padding:15px; border-radius:15px; }
-.related-products img { width:180px; border-radius:10px; }
-
-/* Footer */
-footer { text-align:center; padding:20px; background:#000; margin-top:60px; }
+onesound-flagship-theme/
+│
+├── assets/
+│   ├── base.css
+│   ├── motion.js
+│   ├── transitions.js
+│   ├── video-scroll.js
+│   └── reviews-slider.js
+│
+├── config/
+│   └── settings_schema.json
+│
+├── layout/
+│   └── theme.liquid
+│
+├── sections/
+│   ├── hero-video.liquid
+│   ├── feature-blocks.liquid
+│   ├── reviews.liquid
+│   └── product-main.liquid
+│
+├── templates/
+│   ├── index.json
+│   └── product.json
+│
+└── snippets/
+    ├── page-transition.liquid
+    └── loader.liquid
