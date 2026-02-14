@@ -1,0 +1,17 @@
+<section class="hero">
+  <video id="heroVideo" muted playsinline preload="auto">
+    <source src="{{ 'product-hero.mp4' | asset_url }}" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h1>Hear Everything.</h1>
+    <a href="/products/onesound" class="button">Buy Now</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Video",
+  "settings": []
+}
+{% endschema %}
